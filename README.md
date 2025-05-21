@@ -25,3 +25,17 @@
 8. Count Rotations [GFG](https://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/)
 9. Search in a matrix sorted with rows & cols
 10. Search in a sorted matrix: [Leetcode](https://leetcode.com/problems/search-a-2d-matrix/)
+
+### Sortings:
+1. Bubble Sort
+2. Selection Sort
+3. Insertion sort
+4. Cyclic Sort
+
+# Cyclic sort
+1. Missing number [Leetcode-268](https://leetcode.com/problems/missing-number/description/)
+2. Find all numbers disappeared in an array [Leetcode-448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)
+3. Find the duplicate number[Leetcode-287](https://leetcode.com/problems/find-the-duplicate-number/)
+4. Find all the duplicates in an array [Leetcode-442](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
+5. Set mismatch [Leetcode-645](https://leetcode.com/problems/set-mismatch/)
+6. First Missing Positive [Leetcode-41](https://leetcode.com/problems/first-missing-positive/)
