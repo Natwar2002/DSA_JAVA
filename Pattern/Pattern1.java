@@ -1,7 +1,7 @@
 public class Pattern1 {
     public static void main(String[] args) {
-        int row = 5;
-        pattern7(row);
+        int row = 4;
+        pattern10(row);
     }
 
     /*
@@ -98,8 +98,7 @@ public class Pattern1 {
 
     static void pattern7(int n) {
         for (int i = 1; i <= n; i++) {
-            int space = n - i + 1;
-            for (int j = 1; j <= space; j++) {
+            for (int j = 1; j <= n - i + 1; j++) {
                 System.out.print(" " + " ");
             }
             for (int j = i; j >= 1; j--) {
@@ -109,6 +108,46 @@ public class Pattern1 {
                 System.out.print(j + " ");
             }
             System.out.println("");
+        }
+    }
+
+    static void pattern8(int n) {
+        for (int i = 1; i <= n * 2; i++) {
+            int space = i > 5 ? i - n : n - i;
+            int col = i > 5 ? 2 * n - i : i;
+            for (int j = 0; j <= space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = col; j >= 1; j--) {
+                System.out.print(j);
+            }
+            for (int j = 2; j <= col; j++) {
+                System.out.print(j);
+            }
+            System.out.println(" ");
+        }
+    }
+
+    static void pattern9(int n) {
+        n = 2 * n;
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= n; j++) {
+                int val = Math.min(Math.min(i, j), Math.min(n - i, n - j));
+                System.out.print(val + " ");
+            }
+            System.out.println(" ");
+        }
+    }
+
+    static void pattern10(int n) {
+        int num = n;
+        n = n * 2;
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= n; j++) {
+                int val = num - (Math.min(Math.min(i, j), Math.min(n - i, n - j)));
+                System.out.print(val + " ");
+            }
+            System.out.println(" ");
         }
     }
 }
